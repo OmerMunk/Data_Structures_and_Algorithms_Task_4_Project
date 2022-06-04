@@ -147,7 +147,7 @@ class Heap:
     def heapify_down(self, i: int) -> None:
         """
         This function implements heapify-down, it gets an index, and 'slides-down' the element in that index to its
-        correct place of the heap hierarchy
+        correct place of the heap hierarchy. (As described in the university book).
 
         Parameters
         ----------
@@ -175,7 +175,7 @@ class Heap:
     def heapify_up(self, i: int) -> None:
         """
         This function implements heapify-up, it 'slides-up' an element in the given index to its correct place in the
-        hierarchy of the heap.
+        hierarchy of the heap. (As described in the university book).
 
         Parameters
         ----------
@@ -196,7 +196,7 @@ class Heap:
     def heap_extract_min(self) -> int:
         """
         This function extracts the minimum value of the min-heap and then arranges it to still meet the requirements
-        for a min-heap.
+        for a min-heap. (As described in the university book).
 
         Returns
         -------
@@ -221,7 +221,7 @@ class Heap:
     def heap_insert(self, value: int) -> None:
         """
         This function inserts a value to the end of the heap, and then uses heapify-up to place the new value in the
-        correct place.
+        correct place. (As described in the university book).
 
         Parameters
         ----------
@@ -235,7 +235,7 @@ class Heap:
     @staticmethod
     def build_heap(array: list):
         """
-        This function build a minimum-heap using heapify down on the given array.
+        This function build a minimum-heap using heapify down on the given array. (As described in the university book).
 
         Parameters
         ----------

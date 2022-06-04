@@ -4,7 +4,7 @@ from partition import randomized_partition
 def randomized_select(array: list, p: int, r: int, i: int):
     """
     This function implements Randomized-Select, and finds the k-smallest number of an array.
-    It uses randomized partition
+    It uses randomized partition. (As described in the university book).
 
     Parameters
     ----------

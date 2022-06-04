@@ -5,7 +5,7 @@ from utils import solution_2_add_compare
 
 def partition(array: list, p: int, r: int):
     """
-    This function implements partition.
+    This function implements partition. (As described in the university book).
 
     Parameters
     ----------
@@ -46,7 +46,7 @@ def partition(array: list, p: int, r: int):
 def randomized_partition(array, p, r) -> int:
     """
     This function implements randomized partition.
-    It uses partition.
+    It uses partition. (As described in the university book).
 
     Parameters
     ----------

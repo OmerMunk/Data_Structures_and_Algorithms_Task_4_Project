@@ -1,9 +1,6 @@
-
-from Heap import Heap  # Importing the heap class and methods from the Heap.py file - Written by Omer Munk
-from quick_sort import randomized_quick_sort  # Importing the quicksort function - Written by Omer Munk
-from select import randomized_select  # Importing the randomized select function - Written by Omer Munk
-
-# Import of utility function that contribute to the execution and the workflow of the project - Written by Omer Munk
+from Heap import Heap
+from quick_sort import randomized_quick_sort
+from select import randomized_select
 from utils import generate_array, get_solution_1_compares, get_solution_2_compares, reset_solution_1_compares, \
     reset_solution_2_compares
 
@@ -11,13 +8,11 @@ from utils import generate_array, get_solution_1_compares, get_solution_2_compar
 # Contributes to the workflow of the project, i could have used simple copy using a for loop that copy each element,
 # but it isn't what the project about. Copy is a built-in python package
 from copy import deepcopy
-
-from printers import printer, Color  # Importing some printers for readable output - Written by Omer Munk
+from printers import printer, Color
 
 # Importing matplotlib.pyplot, which is an external package use for plotting in python.
 import matplotlib.pyplot as plt
 
-from time import time
 
 
 def solution1(array, k, test=False):
@@ -199,17 +194,11 @@ if __name__ == "__main__":
 
     array2 = deepcopy(array1)
     printer("starting test1")
-    start = time()
     solution1(array1, k)
-    total = time() - start
-    print(total)
     printer(f"finished test1, took {get_solution_1_compares()} compares")
     printer()
     printer("starting test2")
-    start = time()
     solution2(array2, k)
-    total = time() - start
-    print(total)
     printer(f"finished test2, took {get_solution_2_compares()} compares")
     statistical_test()
     print(f"{Color.RED}Finished Program{Color.END}")

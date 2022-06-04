@@ -3,7 +3,7 @@ from partition import randomized_partition
 
 def randomized_quick_sort(array: list, p: int, r: int) -> None:
     """
-    This function implements quick-sort.
+    This function implements randomized quick-sort. (As described in the university book).
 
     Parameters
     ----------
